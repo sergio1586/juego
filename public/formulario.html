@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario del Juego</title>
+    <link rel="stylesheet" href="estilos/estilo.css">
+</head>
+<body>
+    <form id="formulario">
+        <p>Ingrese los datos del jugador</p>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" pattern="[A-Za-z\s]+" title="Ingrese un nombre válido (solo letras y espacios)" required><br>
+        <label for="text">Edad</label>
+        <input type="number" name="edad" id="edad" pattern="[0-9]{1,3}" title="Ingrese una edad válida" required>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Ingrese una dirección de correo electrónico válida" required>
+        <input type="submit" value="Enviar">
+    </form>
+    <script src="script/formulario.js"></script>
+</body>
+</html>
